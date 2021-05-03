@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeStyle = styled.div`
 
-.destaques {
+.highlights {
   display: grid;
   grid-gap: .2rem;
   grid-template-columns: 100%;
@@ -16,7 +16,7 @@ export const HomeStyle = styled.div`
     }
 }
 
-.destaques__principal {
+.highlights__main {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }

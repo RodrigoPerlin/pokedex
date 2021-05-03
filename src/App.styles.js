@@ -6,20 +6,20 @@ export const AppStyle = styled.div`
     display: grid;  
     font-family: Arial, Helvetica, sans-serif;
     grid-template-areas: 
-        "cabecalho"
-        "conteudo"
+        "header"
+        "contents"
         "rodape";
     grid-template-columns: auto;
     grid-template-rows: 140px auto 20px ; 
 }
 
-.cabecalho {
+.header {
     background: #fdfdfd;
     text-align: center;
 }
 
-.conteudo {
-    grid-area: conteudo;
+.contents {
+    grid-area: contents;
     padding: 0 2rem;
 }
 

@@ -18,7 +18,7 @@ describe('Home', () => {
         </Router>
       </ThemeProvider>
     );
-    expect(screen.getByAltText(/logo/i)).toBeInTheDocument();
+    expect(screen.getByAltText(/soon/i)).toBeInTheDocument();
   });
 
   it('Not Button Disabled', () => {

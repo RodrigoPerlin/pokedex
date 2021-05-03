@@ -30,18 +30,18 @@ const Home = () => {
     return (
       <S.HomeStyle>
         <div className='home'>
-          <div className='cabecalho'>
-            <img src={LogoSrc} height="170" alt="logo" />
+          <div className='header'>
+            <img src={LogoSrc} height="170" alt="soon" />
           </div>
-          <div className='conteudo'>
-            <div className='destaques'>
-              <div className="destaques__principal caixa">
+          <div className='contents'>
+            <div className='highlights'>
+              <div className="highlights__main box">
                 <ButtonMobile
                   statePage={statePage}
                   setStatePage={setStatePage}
                 />
                 {pokemons.map((pokemon) => (
-                  <div className="destaques__principal" key={pokemon.name}>
+                  <div className="highlights__main" key={pokemon.name}>
                     <Link className="link" to={`/${pokemon.name}`}>
                       <S.Item key={pokemon.name}>
                         {pokemon.name}
