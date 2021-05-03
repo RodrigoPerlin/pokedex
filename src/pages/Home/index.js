@@ -39,7 +39,7 @@ const Home = () => {
                 <ButtonMobile
                   statePage={statePage}
                   setStatePage={setStatePage}
-                ></ButtonMobile>
+                />
                 {pokemons.map((pokemon) => (
                   <div className="destaques__principal" key={pokemon.name}>
                     <Link className="link" to={`/${pokemon.name}`}>
