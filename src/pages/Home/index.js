@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import usePagination from '../../Hooks/usePagination';
-import usePokemon from '../../Hooks/usePokemon';
+import usePagination from '../../Hooks/usePagination/usePagination';
+import usePokemon from '../../Hooks/usePokemon/usePokemon';
 import { Link } from 'react-router-dom';
 import * as S from './Home.styles';
 import Footer from '../../Components/Footer';
@@ -22,7 +22,7 @@ const Home = () => {
     return (
       <Loading >
         <div className="loading" data-testid="loading">
-          Loading...
+          Carregando Lista
             </div>
       </Loading >
     );
@@ -41,9 +41,9 @@ const Home = () => {
                   setStatePage={setStatePage}
                 ></ButtonMobile>
                 {pokemons.map((pokemon) => (
-                  <div className="destaques__principal">
-                    <Link className="link" key={pokemon.name} to={`/${pokemon.name}`} key={pokemon.name}>
-                      <S.Item>
+                  <div className="destaques__principal" key={pokemon.name}>
+                    <Link className="link" to={`/${pokemon.name}`}>
+                      <S.Item key={pokemon.name}>
                         {pokemon.name}
                       </S.Item>
                     </Link>

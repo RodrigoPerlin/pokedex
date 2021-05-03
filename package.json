@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.30.4"
+    "@testing-library/dom": "^7.30.4",
+    "@testing-library/react-hooks": "^5.1.2"
   }
 }

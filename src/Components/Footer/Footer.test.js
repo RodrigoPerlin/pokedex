@@ -7,7 +7,7 @@ import { theme } from '../../theme/index';
 
 describe('Footer', () => {
 
-    const mockDevelop = 'Desenvolvido por Rodrigo Perlin &copy;';
+    const mockFooter = 'footer';
 
     it('Render Footer', () => {
         render(
@@ -15,7 +15,7 @@ describe('Footer', () => {
                 <Footer />
             </ThemeProvider>
         );
-        const footer = screen.getByTestId('Footer')
+        const footer = screen.getByTestId(mockFooter);
         expect(footer).toBeInTheDocument();
     });
 

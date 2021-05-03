@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import PodekemonDetail from './index';
 import { ThemeProvider } from 'styled-components';
@@ -421,7 +421,7 @@ describe('PodekemonDetail', () => {
     it('Render PodekemonDetail Loading', () => {
         render(
             <ThemeProvider theme={theme}>
-            <PodekemonDetail pokemon={mockPokemon} />
+                <PodekemonDetail pokemon={mockPokemon} />
             </ThemeProvider>
 
         );
@@ -437,8 +437,25 @@ describe('PodekemonDetail', () => {
         expect(screen.getByText(/grass, poison/)).toBeInTheDocument();
         expect(screen.getByText(/0.8/)).toBeInTheDocument();
         expect(screen.getByText(/6/)).toBeInTheDocument();
+
+    });
+
+    it('Render PodekemonDetail img', () => {
+        render(
+            <PodekemonDetail pokemon={mockPokemonDetail} />
+        );
+        expect(screen.getByAltText('sentret')).toBeInTheDocument();
+    });
+
+    it('Two click Img', () => {
+        render(
+            <PodekemonDetail pokemon={mockPokemonDetail} />
+        );
+        const img = screen.getByAltText('sentret');
+
+        expect(img).toBeInTheDocument();
+
+        fireEvent.click(img)
     });
 
 });
-
-    

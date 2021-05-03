@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
-import { useSelectName } from '../../Hooks/useSelectName';
+import { useSelectName } from '../../Hooks/useSelectName/useSelectName';
 import PokemonDetail from '../../Components/PodekemonDetail/index';
 import Button from '../../Components/Button';
 
@@ -19,7 +19,7 @@ const Information = props => {
     }, [id])
 
     return (
-        <div>
+        <div data-testid="information">
             <PokemonDetail pokemon={pokemons} />
             <Button margin={'20px'} onClick={goLogin}> Voltar</Button>
 
