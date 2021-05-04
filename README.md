@@ -40,4 +40,4 @@ This application was deployed with Gihub pages, and you can access on the follin
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the https://pokeapi.co/ License. See `LICENSE` for more information.
