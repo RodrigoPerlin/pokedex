@@ -1,6 +1,4 @@
 import api from "../../services/api";
-import { useEffect, useState } from 'react';
-
 
 export const useSelectName = async (name) => {
 
