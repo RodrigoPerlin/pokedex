@@ -8,16 +8,24 @@ import { theme } from '../../theme';
 
 const history = createMemoryHistory();
 
+jest.mock('../../Hooks/usePokemon/usePokemon', () => ({
+  __esModule: true,
+  default: () => ({
+    ListPokemon: () => { },
+    pokemons: [{ name: "teste" }]
+  })
+}))
 describe('Home', () => {
 
   it('Render Logo Home', () => {
-    render(
+    const { debug } = render(
       <ThemeProvider theme={theme}>
         <Router history={history}>
           <Home />
         </Router>
       </ThemeProvider>
     );
+
     expect(screen.getByAltText(/soon/i)).toBeInTheDocument();
   });
 
