@@ -1,19 +1,17 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from '../pages/Home/index'
-import Information from '../pages/Information/index'
+
+const Home = lazy(() => import('../pages/Home/index'));
+const Information = lazy(() => import('../pages/Information/index'));
+
 
 export const Routes = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Switch>
-      <Route path="/home">
-        <Home />
-      </Route>
-      <Route path="/:id">
-        <Information />
-      </Route>
-      <Route path="/*">
-        <Home />
-      </Route>
+      <Suspense fallback={<div />}>
+        <Route path="/" exact component={Home} />
+        <Route path="/:id" exact component={Information} />
+      </Suspense>
     </Switch>
   </BrowserRouter>
 );
