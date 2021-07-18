@@ -14,7 +14,7 @@ This application was deployed with Gihub pages, and you can access on the follin
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo 
    ```sh
    git clone github.com/RodrigoPerlin/pokedex.git
    ```
