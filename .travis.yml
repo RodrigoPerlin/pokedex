@@ -1,12 +1,13 @@
 language: node_js
 node_js:
-  - "stable"
+  - '10'
 cache:
+  yarn: true
   directories:
-  - node_modules
+    - node_modules
 script:
-  - cd test-app
-  - npm install
-  - npm test
+  - yarn test
+before_deploy:
+  - yarn run build
   on:
     branch: master
