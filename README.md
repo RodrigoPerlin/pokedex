@@ -1,3 +1,7 @@
+
+[![Build Status](https://travis-ci.com/RodrigoPerlin/pokedex.svg?branch=master)](https://travis-ci.com/RodrigoPerlin/pokedex)
+
+
 ## About The Project
 
 A front-end application made with React to consume the pokeapi.co API. Here there is a main paginated page containing the paginated list of pokémons and by clicking on one of the names of the pokemons in the list, there is a redirection to a page containing the
@@ -37,6 +41,8 @@ This application was deployed with Gihub pages, and you can access on the follin
    ```sh
    yarn test or npm run test
    ```
+
+
 
 ## License
 
