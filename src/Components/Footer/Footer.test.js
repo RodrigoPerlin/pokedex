@@ -5,7 +5,7 @@ import Footer from './index';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/index';
 
-describe('Footer3', () => {
+describe('Footer', () => {
 
     const mockFooter = 'footer';
 
