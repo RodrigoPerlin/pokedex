@@ -10,7 +10,7 @@ describe('ButtonDesktop', () => {
     const mockNumber = '1';
     const mockSetStatePage = jest.fn(() => '11');
 
-    it('Render Button', () => {
+    it('Render ButtonDesktops', () => {
         render(
             <ThemeProvider theme={theme}>
                 <ButtonDesktop

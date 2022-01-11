@@ -9,7 +9,7 @@ describe('Button', () => {
 
     const mockVoltar = 'Voltar';
 
-    it('Render button ,Click2', () => {
+    it('Render button ,Click', () => {
         const comp = render(
             <ThemeProvider theme={theme}>
                 <Button>
