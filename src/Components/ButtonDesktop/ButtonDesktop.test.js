@@ -5,7 +5,7 @@ import ButtonDesktop from './index';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme';
 
-describe('ButtonDesktop', () => {
+describe('1', () => {
 
     const mockNumber = '1';
     const mockSetStatePage = jest.fn(() => '11');
