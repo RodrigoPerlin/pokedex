@@ -5,11 +5,11 @@ import Footer from './index';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/index';
 
-describe('Footer', () => {
+describe('Foo', () => {
 
     const mockFooter = 'footer';
 
-    it('Render Footer', () => {
+    it('Render Foot', () => {
         render(
             <ThemeProvider theme={theme}>
                 <Footer />
