@@ -7,5 +7,5 @@ install:
   - yarn install
 
 script:
-  - npm test src/
+  - yarn test
 # Syntax yang akan dijalnkan sebelum melakukan deployment
