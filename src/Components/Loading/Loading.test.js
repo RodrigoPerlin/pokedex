@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/index';
 
 
-describe('Loading', () => {
+describe('3', () => {
 
     const mockLoading = 'Loading';
 
