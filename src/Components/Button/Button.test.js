@@ -5,7 +5,7 @@ import Button from './index';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/index';
 
-describe('But', () => {
+describe('Button', () => {
 
     const mockVoltar = 'Voltar';
 
